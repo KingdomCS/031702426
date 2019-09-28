@@ -132,7 +132,7 @@ def segementFive(add,res,jd):
     
 def segementSeven(detail,res):    
     add=detail
-    pattern=re.compile(r'(.*?[街])|(.*?[道])|(.*?[路])|(.*?[巷])|(.*?[大街])|(.*?[街道])')
+    pattern=re.compile(r'(.*?[街])|(.*?[道])|(.*?[路])|(.*?[巷])|(.*?[大街])|(.*?[街道])|(.*?[委会])')
     #pattern= re.compile(r'.+(路|街|巷|桥|道){1}')
     match = pattern.search(add)
     if(match):
