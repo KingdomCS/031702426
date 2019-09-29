@@ -62,8 +62,6 @@ def segementFive(add,res,jd):
                     add = res.province + add
             
             break
-    if res.province == "":#目前台湾暂时没有数据
-        return 
     #-------------------------------------------------------------------------        
     #直辖市/市(地级)
     flagCity=0#默认没有查找到
@@ -243,7 +241,6 @@ def enhancement(add,res,jd):
     #---------------------------------------------------------------------
     #街道/镇/乡(乡镇级)
     match=add[:2]
-    flagTown=0#默认没有查找到
     if (flagArea==1):
         for itemTown in townList["children"]:
             if re.search(match,itemTown["name"]):
